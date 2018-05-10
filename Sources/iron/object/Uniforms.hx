@@ -634,7 +634,7 @@ class Uniforms {
 			else if (c.link == "_spotlampData") {
 				// cutoff, cutoff - exponent
 				vx = lamp == null ? 0.0 : lamp.data.raw.spot_size;
-				vy = lamp == null ? 0.0 : vx - lamp.data.raw.spot_blend;
+				vy = lamp == null ? 0.0 : vx - cast(lamp.data.raw.spot_blend, kha.FastFloat);
 			}
 			else if (c.link == "_tilesheetOffset") {
 				var ts = cast(object, MeshObject).tilesheet;

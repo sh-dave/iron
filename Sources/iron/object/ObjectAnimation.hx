@@ -84,7 +84,7 @@ class ObjectAnimation extends Animation {
 	function updateAnimNonSampled(anim:TAnimation, transform:Transform) {
 		if (anim == null) return;
 		
-		var total = anim.end * frameTime - anim.begin * frameTime;
+		var total: Float = anim.end * frameTime - anim.begin * frameTime;
 
 		if (anim.has_delta) {
 			var t = transform;

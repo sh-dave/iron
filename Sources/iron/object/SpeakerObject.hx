@@ -47,7 +47,7 @@ class SpeakerObject extends Object {
 		var loc1 = cam.transform.world.getLoc();
 		var loc2 = transform.world.getLoc();
 
-		var d = Vec4.distance(loc1, loc2);
+		var d: Float = Vec4.distance(loc1, loc2);
 		d *= data.attenuation;
 		var vol = 1.0 - Math.min(d / 100, 1);
 
